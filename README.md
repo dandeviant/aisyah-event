@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Page
+
+1. About Us
+
+2. Our Halls (ada 2 sub page under page ni)
+     a. Eureka Hall
+          • Package
+          • Hall Pic & Vid
+     b. Hudan Hall
+          • Package 
+          • ⁠Hall Pic & Vid
+
+3. Facilities
+4. Gallery Client Pic
+5. Contact Us
