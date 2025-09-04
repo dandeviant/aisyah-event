@@ -2,27 +2,49 @@
 import React from "react";
 
 export default function Home() {
+    const tabs = {
+        color: "white"
+    }; 
     return(
         <div>
+            <style>
+                
+            </style>
             <div className="text-center items-center">
-                <p className="w-full h-20 flex items-center align-middle justify-center items-center">Select from below</p>
+                <p className="w-full h-20 flex items-center align-middle justify-center items-center">SELECT HALL</p>
             </div>
-            <div className="border tabs tabs-border justify-center">
-            <input type="radio" name="my_tabs_2" className="tab w-1/2 text-xl text-white h-20 hover:text-2xl" aria-label="Eureka Hall" />
-            <div className="border tab-content bg-base-100 p-10 ">
-                <div className="border w-full h-100 flex align-middle items-center align-middle justify-center">
-                    Tab content 1
+            <div className="tabs tabs-box justify-center">
+                <input type="radio" id="eureka-tab" className="tab text-red w-1/2 text-xl h-20 hover:text-2xl" aria-label="Eureka Hall" defaultChecked/>
+                <label htmlFor="eureka-tab">Test Label</label>
+                <div className="tab-content bg-base-100 p-10 ">
+                    
+                    <div className="w-full h-100 flex align-middle items-center align-middle justify-center relative">
+                        <div className="border w-1/2 h-full flex items-center justify-center">
+                            EUREKA HALL IMAGE 1
+                        </div>
+                        <div className="border w-1/2 h-full flex items-center justify-center">
+                            EUREKA HALL IMAGE 2
+                        </div>
+                    </div>
+                    <div className="w-full h-100 flex align-middle items-center align-middle justify-center relative">
+                        PACKAGE DESCRIPTION - EUREKA
+                    </div>
                 </div>
-            </div>
 
-            <input type="radio" name="my_tabs_2" className="tab w-1/2 text-xl h-20 hover:text-2xl" aria-label="Hudan Hall" defaultChecked />
-            <div className="border tab-content bg-base-100 p-10 ">
-                <div className="border w-full h-100 flex align-middle items-center align-middle justify-center">
-                    Tab content 2
+                <input type="radio" name="hudan-tab" className="tab w-1/2 text-xl h-20 hover:text-2xl" aria-label="Hudan Hall" />
+                <div className="tab-content bg-base-100 p-10 ">
+                    <div className="w-full h-100 flex align-middle items-center align-middle justify-center relative">
+                        <div className="border w-1/2 h-full flex items-center justify-center">
+                            HUDAN HALL IMAGE 1
+                        </div>
+                        <div className="border w-1/2 h-full flex items-center justify-center">
+                            HUDAN HALL IMAGE 2
+                        </div>
+                    </div>
+                    <div className="w-full h-100 flex align-middle items-center align-middle justify-center relative">
+                        PACKAGE DESCRIPTION - HUDAN
+                    </div>
                 </div>
-            </div>
-
-            </div>
             
 
 
@@ -52,8 +74,9 @@ export default function Home() {
                     <p>Facilities page</p>
                 </div>
             </div> */}
+            </div>
         </div>
-    );
+    )
 }
 
 export function Test() {
