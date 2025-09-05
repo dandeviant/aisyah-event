@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   },
   trailingSlash: true,
   // assetPrefix: '.',
+  images: {
+    unoptimized: true,
+  },
 };
 
 
