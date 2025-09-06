@@ -3,44 +3,60 @@
 'use client'
 import React from "react";
 
+export function Description() {return (
+		<div>
+			<p className="text-3xl"><b>Sub title or motto, whatever</b></p>
+			<br></br>
+			<p className="">(Subtext) Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+			et dolore magna aliqua. (include YouTube embed)</p>
+		</div>
+);}
+
+export function Video() { return(
+		<iframe src="https://www.youtube.com/embed/Hif2fdPpvcc?si=SKtHp3eptUlG0roB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
+);}
+
 export default function Home() {
   return (
     // MASTER DIV
     <div className="bg-white text-black">
-        <style jsx>{`
-              .vl {border-left: 6px solid white; height: 40%;}
-              .vl2 {border-left: 6px solid white; height: 100%;}
-              iframe {width:600px; height:100%;}
-              `}
-        </style>
-        <div className="bg-black h-230">
-          <div className="flex items-center justify-center align-middle text-white h-3/10">
-            	<p className="text-6xl font-bold transition duration-150 hover:text-cyan-400">
-          		<b>Main Title</b>
-            	</p>
-          </div>
-          <div className="flex items-center justify-center align-middle text-white h-7/10 pb-60">  
-            {/* <div className="w-5/10 border items-right justify-end"> */}
-			<div className="flex w-1/2 h-100 justify-end items-center pr-10">
-				<div className="w-3/4 h-1/2 text-right items-center transition ease-in">
-				<p className="text-3xl"><b>Sub title or motto, whatever</b></p>
-				<p className="">(Subtext) Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-				et dolore magna aliqua. (include YouTube embed)</p>
+		<style jsx>{`
+			.vl {border-left: 6px solid white; height: 40%;}
+			.vl2 {border-left: 6px solid white; height: 100%;}
+			iframe {width:600px; height:100%;}
+
+			@media only screen and (max-width: 500px) {}
+				iframe {width:700px; height:100%;}
+			`}
+		</style>
+		<div className="bg-black h-100vh sm:h-screen">
+			<div className="flex items-center justify-center align-middle text-white h-3/10">
+				<p className="text-6xl font-bold transition duration-150 hover:text-cyan-400">
+					<b>Main Title</b>
+				</p>
+			</div>
+			<div className="lg:flex items-center justify-center align-middle text-white ">  
+				<div className="h-40 sm:h-100 flex items-center justify-end sm:justify-center">
+					<div className="h-full lg:w-4/5 px-10 sm:pr-0 sm:pl flex lg:text-right text-center justify-center items-center">
+						<Description></Description>
+					</div>
+				</div>
+				{/* VERT LINE */}
+				{/* <div className="flex w-1/20 h-2/5 items-center justify-center">
+				<div className="vl2"></div>
+				</div>  */}
+				<div className="relative sm:flex lg:w-1/2 w-screen h-100 sm:text-left sm:items-left sm:pl-10 px-1/2">
+					<div className="w-full h-[50vw] sm:h-full sm:w-[30vw] flex items-center justify-center">
+						<iframe src="https://www.youtube.com/embed/Hif2fdPpvcc?si=SKtHp3eptUlG0roB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
+					</div>
 				</div>
 			</div>
-            {/* <div className="flex w-1/20 h-2/5 items-center justify-center">
-              <div className="vl2"></div>
-            </div>  */}
-			<div className="flex-1 w-3/5 h-100 text-left lg:flex items-left pl-10">
-				<iframe src="https://www.youtube.com/embed/Lm9Qx1A3U6s?si=y3S55znVpUTUr_j_" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-			</div>
-          </div>
-        </div>
+		</div>
         {/* IMAGE CAROUSEL */}
-		<div>
-			<div id="item1" className="group w-full relative">
+		<div className="relative sm:flex">
+			<div id="item1" className="group w-full relative md:flex ">
 				<div className="h-full w-full absolute ">
-					<div className="border h-full text-black text-6xl flex items-center justify-center ">
+					<div className="h-full text-black text-6xl flex items-center justify-center ">
 						<b>Text on image</b>
 					</div>
 				</div>
@@ -62,7 +78,7 @@ export default function Home() {
 			</div>
 		</div>
 		<div className="overflow-hidden font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-			<title>Front Page</title>
+			<title>Eureka Event Hall</title>
 			<main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 				<p className="text-black text-2xl">Base contents</p>
 			</main >
